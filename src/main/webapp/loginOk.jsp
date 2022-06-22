@@ -15,7 +15,7 @@
 			
 			session.setAttribute("memberId", memberId);  /* 세션에 저장, Attribute의 속성은 멤버변수*/
 			session.setAttribute("memberPw", memberPw);
-			
+// 			session.setAttribute("ValidMem", "yes"); 
 			
 			out.println("로그인 성공! <br>");			// web 화면에 찍히는 내용
 			out.println(memberId + "님 반갑습니다.");
@@ -27,5 +27,8 @@
 		
 		
 	%>
+	
+	<br>
+	<a href="sessionCheck.jsp">세션값 확인 페이지로 이동</a>
 </body>
 </html>
