@@ -7,7 +7,7 @@
 <title> 회원 로그인 </title>
 </head>
 <body>
-	<%
+	<%	// 로그인이 안된 상태
 		String mid = (String)session.getAttribute("memberId");	
 		if(mid == null) {					// session 값이 비었는지 확인
 	%>
@@ -20,7 +20,7 @@
 	
 	<%
 		}
-		else {
+		else {	// 로그인이 된 상태
 	%>
 		현재 <%= mid %>님 로그인 중입니다. <br><br>
 		<input type="button" value="로그아웃" onclick="location.href='logout.jsp'">
